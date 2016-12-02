@@ -121,7 +121,7 @@ $(document).ready(function () {
 
 	//var base = location.origin = location.protocol + "//" + location.host + '/';
 	//var base = location.href;
-	var anchors = [
+	var cubeletLinks = [
 		'#00',
 		'#01',
 		'#02',
@@ -181,7 +181,7 @@ $(document).ready(function () {
 				default:
 					break;
 			}			
-			var url = anchors[c.cubelet.id];
+			var url = cubeletLinks[c.cubelet.id];
 			document.location.href = url + color;
 		}
 	}
@@ -189,5 +189,13 @@ $(document).ready(function () {
 	$('#act1').click(function (e) {
 		motion.paused = !motion.paused;
 	});
+	// https://ruwix.com/the-rubiks-cube/rubiks-cube-patterns-algorithms/
+	$('#act2').click(function (e) {
+		cube.twist( 'UUDDRRLLFFBB' );
+	});
 
+	$('#act3').click(function (e) {
+		cube.twist( 'UdRlFbUd' );
+		//cube.twist( 'UdrLFbUdrL' );
+	});
 })

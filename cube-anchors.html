@@ -16,14 +16,56 @@
 
 	<link rel="stylesheet" type="text/css" href="examples/basic/styles/guacamole.css">
 
-	<title>Guacamole Cube</title>
+	<title>Cube links</title>
 
 
-	<!-- compiled cube code -->
-	<!-- <script charset="utf-8" src="build/cuber.js"></script> -->
+	<script charset="utf-8" src="src/scripts/vendor/tween.min.js"></script>
 
-	<!-- compiled & minified cube code -->
-	<script charset="utf-8" src="build/cuber.min.js"></script>
+
+	<!-- cube source code -->
+
+
+	<!--  Three.js  -->
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/Three.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/core/EventDispatcher.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Math.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Quaternion.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Vector2.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Vector3.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Box3.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Sphere.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Euler.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Matrix3.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Matrix4.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/core/Object3D.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/cameras/Camera.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/cameras/PerspectiveCamera.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Ray.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/threejs/src/math/Plane.js"></script>
+
+
+	<!--  Here are the Cube guts. Enjoy.  -->
+	<script charset="utf-8" src="src/scripts/ERNO.js"></script>
+	<script charset="utf-8" src="src/scripts/vendor/CSS3DRenderer.js"></script>
+	<script charset="utf-8" src="src/scripts/utils/utils.js"></script>
+	<script charset="utf-8" src="src/scripts/utils/Number.js"></script>
+	<script charset="utf-8" src="src/scripts/utils/String.js"></script>
+	<script charset="utf-8" src="src/scripts/utils/Array.js"></script>
+	<script charset="utf-8" src="src/scripts/colors.js"></script>
+	<script charset="utf-8" src="src/scripts/directions.js"></script>
+	<script charset="utf-8" src="src/scripts/queues.js"></script>
+	<script charset="utf-8" src="src/scripts/twists.js"></script>
+	<script charset="utf-8" src="src/scripts/cubelets.js"></script>
+	<script charset="utf-8" src="src/scripts/groups.js"></script>
+	<script charset="utf-8" src="src/scripts/slices.js"></script>
+	<script charset="utf-8" src="src/scripts/folds.js"></script>
+	<script charset="utf-8" src="src/scripts/projector.js"></script>
+	<script charset="utf-8" src="src/scripts/interaction.js"></script>
+	<script charset="utf-8" src="src/scripts/controls.js"></script>
+	<script charset="utf-8" src="src/scripts/cubes.js"></script>
+	<script charset="utf-8" src="src/scripts/solvers.js"></script>
+	<script charset="utf-8" src="src/scripts/renderer.js"></script>
+
 
 
 	<!-- implementation -->
@@ -39,6 +81,8 @@
 <body class="graydient">
 	<div class="row">
 			<button id="act1">Device Motion</button>
+			<button id="act2">Flower</button>
+			<button id="act3">Egg</button>
 		</div>		
 	<div id="container">		
 	</div>
